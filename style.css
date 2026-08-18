@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 480px) {
+  .case-study, .projects, .about {
+    padding: 3rem 1.5rem;
+  }
+}
+
 .hero {
   min-height: 90vh;
   display: flex;
@@ -51,6 +57,14 @@ html {
 
 .hero-cta:hover {
   opacity: 0.9;
+}
+@media (max-width: 600px) {
+  .hero-headline {
+    font-size: 1.8 rem;
+  }
+  .hero {
+    padding: 1.5rem;
+  }
 }
 
 /* SECONDARY PROJECTS SECTION STYLES — paste in style.css */
@@ -460,15 +474,17 @@ html {
     grid-template-columns: 1fr;
   }
 }
-
+/* Contact form styles */
 .contact-form-wrap {
-    --navy: #1B3B6F;
-    --dark: #111318;
-    --light: #F8F9FB;
-    --accent: #2F6FED;
-    font-family: 'Inter', sans-serif;
-    max-width: 480px;
-  }
+  --navy: #1B3B6F;
+  --dark: #111318;
+  --light: #F8F9FB;
+  --accent: #2F6FED;
+  font-family: 'Inter', sans-serif;
+  width: 100%;       /* Change from max-width to width */
+  max-width: 480px;  /* Keep as a constraint for larger screens */
+  margin: 0 auto;    /* Centers the form on mobile */
+}
   .contact-form .field { margin-bottom: 1.25rem; }
   .contact-form label {
     display: block;
