@@ -141,12 +141,26 @@
 </section>
 
 <!-- FOOTER / FINAL CTA — paste at the very end of <body>, after About -->
+
 <footer class="site-footer" id="contact">
   <div class="footer-inner">
     <p class="footer-closing">
-      <!-- Closing sentence. Do not write this until Page 2 has real proof
-           in it — this line is only credible if the case study backs it up. -->
+      Let's discuss how we can leverage data to improve your search visibility.
     </p>
+
+    <!-- Netlify Form -->
+    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+      <p>
+        <label>Your Email: <input type="email" name="email" required /></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message" required></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
     <a href="#" class="footer-cta" target="_blank" rel="noopener">
       Connect With Me On LinkedIn
     </a>
